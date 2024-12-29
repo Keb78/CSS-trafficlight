@@ -97,9 +97,9 @@ body {
     background: repeating-radial-gradient(
       circle,
       red,
-      red 3px,
-      darkred 6px,
-      darkred 7px
+      red 2px,
+      darkred 5px,
+      darkred 5px
     );
     border-radius: 50%;
     box-shadow: 0 0 30px rgba(255, 0, 0, 0.8);
@@ -114,9 +114,9 @@ body {
     background: repeating-radial-gradient(
       circle,
       #f5b330 ,
-      #ffce0c 3px,
-      #d68f0b 6px,
-      #583b0885 7px
+      #ffce0c 2px,
+      #d68f0b 5px,
+      #583b0885 5px
     );
     border-radius: 50%;
     box-shadow: 0 0 30px rgb(255, 170, 0);
