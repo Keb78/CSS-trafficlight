@@ -20,7 +20,7 @@ body {
     position: absolute;
     bottom: 150;
     height: 100%;
-    width: 105px;
+    width: 80px;
     margin-left: 69.5%;
     background: linear-gradient(to left, #454545 14%, #110f0f 30%, #eee 87%, #222020 12%, #ebe9e9 14%);
     border-left: 2.5px solid rgb(134, 135, 138);
@@ -30,8 +30,8 @@ body {
 /* Pole-horizontal */
 .Pole-horizontal {
     position: absolute;
-    width: 530px;
-    height: 80px;
+    width: 400px;
+    height: 70px;
     margin-left: 40%;
     margin-top: 18%;
     background: linear-gradient(to top, #454545 14%, #110f0f 30%, #eee 87%, #222020 12%, #ebe9e9 14%);
@@ -44,53 +44,43 @@ body {
 
 
 .Box {
-    width: 200px;
-    height: 620px;
+    width: 175px;
+    height: 543px;
     background: linear-gradient(to right, #1b1b1b 5%, #000 75%);
-    border: 7px solid rgb(31, 29, 29);
-    border-radius: 25px;
-    margin: 5em auto;
+    border: 1.5px solid rgb(27, 48, 90);
+    border-radius: 70px;
+    margin: 4em auto;
     position: absolute; /* Now it can be moved independently */
-    top: 180px; /* Adjust the position */
-    left: 50%;
+    top: 3px; /* Adjust the position */
+    left: 52%;
     transform: translateX(-50%);
     z-index: 2; /* Ensure it's above the pole */
-    box-shadow: 0px 4px 20px rgba(167, 168, 172, 0.664);
+      /* Adding a shadow to the top of the border */
+  box-shadow: 0 -10px 30px rgba(62, 110, 122, 0.555); /* Horizontal, Vertical, Blur Radius, Color */
 }
+
 
 /* Trafficlight-top-buttom */
 .Trafficlight-top {
     width: 100px;
-    height: 69px;
-    border: 1px solid white;
-    border-radius: 25px;
-    background: linear-gradient(to left, #101010, #474646 75%);
+    height: 40px;
+    border: 1px solid rgb(33, 58, 104);
+    border-radius:  25px 25px 0 0;
+    background: linear-gradient(to left, #383838, #0a0a0a 75%);
     position: absolute; /* Independent positioning */
-    top: 240px; /* Adjust position as needed */
-    left: 45%; /* Adjust horizontal placement */
-    transform: translateX(55%);
-    z-index: 1; /* Behind the traffic light */
-    box-shadow: inset 0px 5px 10px rgba(0, 0, 0, 0.8);
-}
-.Trafficlight- {
-    width: 100px;
-    height: 69px;
-    border: 1px solid white;
-    border-radius: 25px;
-    background: linear-gradient(to left, #101010, #474646 75%);
-    position: absolute; /* Independent positioning */
-    top: 240px; /* Adjust position as needed */
-    left: 45%; /* Adjust horizontal placement */
+    top: 40px; /* Adjust position as needed */
+    left: 44.5%; /* Adjust horizontal placement */
     transform: translateX(55%);
     z-index: 1; /* Behind the traffic light */
     box-shadow: inset 0px 5px 10px rgba(0, 0, 0, 0.8);
 }
 
+
 /* Light Containers */
 .Light {
-    width: 180px;
-    height: 180px;
-    margin: 20px auto;
+  width: 150px;
+  height: 150px;
+    margin: 25px auto;
     border-radius: 50%;
     position: relative;
     background: #222;
@@ -102,8 +92,8 @@ body {
 
 /* Red Light */
 .Redbox {
-    width: 180px;
-    height: 180px;
+    width: 145px;
+    height: 145px;
     background: repeating-radial-gradient(
       circle,
       red,
@@ -119,8 +109,8 @@ body {
   
   /* Yellow Light */
   .Orangebox {
-    width: 180px;
-    height: 180px;
+    width: 145px;
+    height: 145px;
     background: repeating-radial-gradient(
       circle,
       #f5b330 ,
@@ -136,8 +126,8 @@ body {
   
   /* Green Light */
   .Greenbox {
-    width: 180px;
-    height: 180px;
+    width: 145px;
+    height: 145px;
     background: repeating-radial-gradient(
       circle,
       #69f069,
@@ -155,7 +145,7 @@ body {
 @keyframes switchOnSequentialRed {
     0%, 32% {
       opacity: 1;  /* Light On (for 3s out of 9s) */
-      box-shadow: 0 0 30px rgba(255, 0, 0, 0.973);
+      box-shadow: 0 10px 24px rgba(255, 0, 0, 0.973);
     }
     33%, 100% {
       opacity: 0.3;  /* Light Off */
@@ -168,7 +158,7 @@ body {
 @keyframes switchOnSequentialOrange {
     0%, 32% {
         opacity: 1;  /* Light On (for 3s out of 9s) */
-        box-shadow: 0 0 30px rgb(214, 175, 1);
+        box-shadow: 0 10px 24px rgb(214, 175, 1);
     }
     33%, 100% {
         opacity: 0.3;  /* Light Off */
@@ -179,35 +169,36 @@ body {
 @keyframes switchOnSequentialGreen {
     0%, 32% {
         opacity: 1;  /* Light on */
-        box-shadow: 0 0 30px rgba(8, 236, 8, 0.836);
+        box-shadow: 0 10px 24px rgba(8, 236, 8, 0.836);
+        
     }
     33%, 100% {
         opacity: 0.3;  /* Light Off */
         box-shadow: 0 0 3px rgb(134, 196, 20);
+        
     }
 }
 
 .Half-circle-border {
-    width: 250px; /* Half the height of the circle */
-    height: 254px; /* Full height of the circle */
-      
-    border: 17px solid #272525b7; /* Border color and thickness */
-    border-top-left-radius: 100px; /* Half the height */
-    border-top-right-radius: 100px; /* Half the height */
-    border-right: none; /* Remove the right border */
-    border-left: none;
-    border-bottom: none;
-    margin-top: 58px; /* Adjust the position */
-    left: 49%;
-    background: none; /* No background color */
-    position: relative; /* Now it can be moved independently */   
-       
-     transform: translateX(-50%);
-    z-index: 2;
-   
-   
-
+  width: 246px; /* Half the height of the circle */
+  height: 246px; /* Full height of the circle */
+    
+  border: 18px solid #2b2929; /* Border color and thickness */
+  border-top-left-radius: 100px; /* Half the height */
+  border-top-right-radius: 100px; /* Half the height */
+  border-right: none; /* Remove the right border */
+  border-left: none;
+  border-bottom: none;
+  margin-top: 98px; /* Adjust the position */
+  left: 50%;
+  background: none; /* No background color */
+  position: relative; /* Now it can be moved independently */   
+  transform: translateX(-50%);
+  z-index: 2;
+  /* Adding a shadow to the top of the border */
+ 
 }
+
 
 
   
